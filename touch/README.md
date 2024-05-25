@@ -1,0 +1,1 @@
+Here's a demo of me patching another model for https://github.com/Shivelight/recovery_device_infinix_X6833B/issues/5. There's no explanation tho, but it seems most Infinix models have the same pattern, so you can just follow along. https://www.youtube.com/watch?v=AdNtdOWcEAQ

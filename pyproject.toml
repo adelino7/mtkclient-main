@@ -1,0 +1,48 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mtkclient"
+description = "Mediatek reverse engineering and flashing tools"
+maintainers = [
+    {name = "Bjoern Kerler", email = "info@revskills.de"}
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+version = "2.0.0"
+requires-python = ">= 3.8"
+dependencies = [
+    "pyusb",
+    "pycryptodome",
+    "colorama",
+    "shiboken6", 
+    "pyside6",
+    "mock"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GPLv3 License",
+  "Operating System :: OS Independent",
+]
+keywords = ["mediatek", "mtk", "flashing", "reverse engineering", "firmware"]
+
+[project.urls]
+Repository = "https://github.com/bkerler/mtkclient.git"
+Issues = "https://github.com/bkerler/mtkclient/issues"
+
+[project.scripts]
+mtk = "mtk:main"
+stage2 = "stage2:main"
+
+[project.gui-scripts]
+mtk_gui = "mtk_gui:main"
+
+[tool.setuptools]
+# See also the MANIFEST.in file.
+# We want to install all the files in the package directories...
+include-package-data = true
